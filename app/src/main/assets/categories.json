@@ -1,0 +1,48 @@
+{
+  "categories": [
+    {
+      "category_id": 0,
+      "category": "Airway Management",
+      "icon": "ic_throat",
+      "algorithms": [
+        {
+          "algorithm_id": 0,
+          "filename": "laryngectomy.json",
+          "algorithm": "Laryngectomy",
+          "image": "https://i.ibb.co/Kx22RvF/OFM-PNX-Laryngectomy-A4-v2-1.jpg"
+        },
+        {
+          "algorithm_id": 1,
+          "filename": "tracheostomy.json",
+          "algorithm": "Tracheostomy",
+          "image": "https://i.ibb.co/j4HNtPs/OFM-PNX-Tracheostomy-A4-v2-1.jpg"
+        }
+      ]
+    },
+    {
+      "category_id": 1,
+      "category": "Cardiology",
+      "icon": "ic_heart"
+    },
+    {
+      "category_id": 2,
+      "category": "Hematology",
+      "icon": "ic_blood"
+    },
+    {
+      "category_id": 3,
+      "category": "Neurology",
+      "icon": "ic_brain"
+    },
+    {
+      "category_id": 4,
+      "category": "Ophthalmology",
+      "icon": "ic_eye"
+    },
+    {
+      "category_id": 5,
+      "category": "Rheumatology",
+      "icon": "ic_bone"
+    }
+  ]
+}

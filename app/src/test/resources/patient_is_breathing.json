@@ -1,0 +1,69 @@
+{
+  "query": "patient is breathing",
+  "prediction": {
+    "topIntent": "patient_symptom",
+    "intents": {
+      "patient_symptom": {
+        "score": 0.7762136
+      },
+      "question": {
+        "score": 0.100896291
+      },
+      "negate_patient_symptom": {
+        "score": 0.08330151
+      },
+      "navigate": {
+        "score": 0.0067710923
+      },
+      "step_action": {
+        "score": 0.00585724646
+      },
+      "settings": {
+        "score": 0.005503337
+      },
+      "medical_action": {
+        "score": 0.00526107056
+      },
+      "negate_like": {
+        "score": 0.00452449359
+      },
+      "return": {
+        "score": 0.00423767976
+      },
+      "None": {
+        "score": 0.00323017174
+      },
+      "search": {
+        "score": 0.00265149423
+      },
+      "like": {
+        "score": 0.00205256441
+      },
+      "negate_medical_action": {
+        "score": 0.0017641522
+      }
+    },
+    "entities": {
+      "symptom": [
+        [
+          "pulse"
+        ]
+      ],
+      "$instance": {
+        "symptom": [
+          {
+            "type": "symptom",
+            "text": "breathing",
+            "startIndex": 11,
+            "length": 9,
+            "modelTypeId": 5,
+            "modelType": "List Entity Extractor",
+            "recognitionSources": [
+              "model"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

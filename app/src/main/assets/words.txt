@@ -1,0 +1,34 @@
+go to
+airway
+Airway Management
+Neurology
+Hematology
+Ophthalmology
+Rheumatology
+Cardiology
+return
+restart
+next
+yes
+no
+waveform capnography
+capnography
+laryngectomy
+stoma
+assess
+assessment
+patent
+tracheal
+suction catheter
+stable
+improve
+breathing
+patient
+paediatric face mask
+LMA
+CPR
+stoma cover
+deflate the cuff
+cuff
+deflate
+resuscitation

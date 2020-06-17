@@ -1,0 +1,43 @@
+<resources>
+    <string-array name="language_entries">
+        <item>English (Australia)</item>
+        <item>English (Great Britain)</item>
+        <item>English (India)</item>
+        <item>English (Kenya)</item>
+        <item>English (Nigeria)</item>
+        <item>English (South Africa)</item>
+        <item>English (United States)</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>en-AU</item>
+        <item>en-GB</item>
+        <item>en-IN</item>
+        <item>en-KE</item>
+        <item>en-NG</item>
+        <item>en-ZA</item>
+        <item>en-US</item>
+    </string-array>
+
+    <string-array name="engine_entries">
+        <item>None</item>
+        <item>Google Cloud</item>
+        <item>Amazon Transcribe</item>
+        <!--        <item>Amazon Transcribe Medical</item>-->
+    </string-array>
+
+    <string-array name="engine_values">
+        <item>none</item>
+        <item>google_cloud</item>
+        <item>amazon</item>
+        <!--        <item>amazon_medical</item>-->
+    </string-array>
+
+    <string-array name="icon_credits">
+        <item>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
+        <item>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
+        <item>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
+        <item>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
+        <item>Icons made by <a href="https://www.flaticon.com/authors/pixelmeetup" title="Pixelmeetup">Pixelmeetup</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
+    </string-array>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_bar_item_categories"
+        android:enabled="true"
+        android:icon="@drawable/ic_view_list_black_24dp"
+        android:title="@string/menu_categories"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_bar_item_favourites"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="@string/menu_favourites"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_bar_item_assessment"
+        android:enabled="true"
+        android:icon="@drawable/ic_assessment_black_24dp"
+        android:title="@string/menu_assessment"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_bar_item_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom" />
+</menu>

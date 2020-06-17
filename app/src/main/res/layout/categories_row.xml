@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:clickable="true"
+    android:padding="16dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/ivCategory"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:tint="@color/default_text_color" />
+    <!--        android:tint="@color/category_icon_color"-->
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_weight="10"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textAppearance="@color/default_text_color"
+        android:text="Category 1" />
+
+    <FrameLayout
+        android:id="@+id/step_number_circle"
+        android:layout_width="@dimen/vertical_stepper_form_width_circle"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/oval_count">
+
+        <TextView
+            android:id="@+id/tvAlgoCount"
+            android:layout_width="match_parent"
+            android:textAppearance="@color/default_text_color"
+            android:layout_height="@dimen/vertical_stepper_form_width_circle"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/sectionTitle"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:background="@drawable/section_text_border"-->
+    <!--        android:layout_margin="@dimen/mtrl_card_spacing"-->
+    <!--        android:padding="@dimen/mtrl_card_spacing"-->
+    <!--        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/sectionTitle"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mtrl_card_spacing"
+            app:chipBackgroundColor="#FFF"
+            app:chipStrokeColor="#cbcbcb"
+            app:chipStrokeWidth="1dp"
+            app:closeIconVisible="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/step_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <FrameLayout
+                android:id="@+id/step_number_circle"
+                android:layout_width="@dimen/vertical_stepper_form_width_circle"
+                android:layout_height="@dimen/vertical_stepper_form_width_circle"
+                android:background="@drawable/circle_step_done">
+
+                <TextView
+                    android:id="@+id/step_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vertical_stepper_form_width_circle"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/vertical_stepper_form_text_size_circle" />
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="@dimen/vertical_stepper_form_width_vertical_line"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#e0e0e0" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/step_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sectionTitle"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/mtrl_card_spacing"
+            android:elevation="3dp"
+            android:textStyle="bold">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/stepImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/stepTitle"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stepImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                    android:padding="@dimen/mtrl_card_spacing"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stepContent"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stepTitle"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                    android:padding="@dimen/mtrl_card_spacing"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/buttonView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stepContent"
+                    android:layout_margin="@dimen/mtrl_card_spacing"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</LinearLayout>

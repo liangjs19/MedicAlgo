@@ -1,0 +1,17 @@
+{
+  "categories": [
+    {
+      "category_id": 0,
+      "category": "Airway Management",
+      "icon": "ic_throat",
+      "algorithms": [
+        {
+          "algorithm_id": 0,
+          "filename": "algorithm.json",
+          "algorithm": "Tracheostomy",
+          "image": "https://i.ibb.co/Kx22RvF/OFM-PNX-Laryngectomy-A4-v2-1.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "query": "open airway management",
+  "prediction": {
+    "topIntent": "navigate",
+    "intents": {
+      "navigate": {
+        "score": 0.9811692
+      },
+      "medical_action": {
+        "score": 0.008953553
+      },
+      "settings": {
+        "score": 0.006426268
+      },
+      "negate_like": {
+        "score": 0.00522873551
+      },
+      "return": {
+        "score": 0.005131144
+      },
+      "None": {
+        "score": 0.004791632
+      },
+      "step_action": {
+        "score": 0.004476161
+      },
+      "patient_symptom": {
+        "score": 0.00234808913
+      },
+      "negate_medical_action": {
+        "score": 0.0022497843
+      },
+      "search": {
+        "score": 0.00208924245
+      },
+      "question": {
+        "score": 0.00150920975
+      },
+      "negate_patient_symptom": {
+        "score": 0.001485405
+      },
+      "like": {
+        "score": 0.00136777083
+      }
+    },
+    "entities": {
+      "category": [
+        "airway management"
+      ],
+      "$instance": {
+        "category": [
+          {
+            "type": "category",
+            "text": "airway management",
+            "startIndex": 5,
+            "length": 17,
+            "score": 0.979716837,
+            "modelTypeId": 1,
+            "modelType": "Entity Extractor",
+            "recognitionSources": [
+              "model"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

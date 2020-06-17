@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e57373</color>
+    <color name="colorPrimaryLight">#FFBFBF</color>
+    <color name="colorPrimaryDark">#af4448</color>
+    <color name="colorAccent">#e57373</color>
+
+    <color name="grey">#E9E3E3</color>
+    <!-- Material DEFAULT colors -->
+    <color name="material_drawer_primary">@color/colorPrimary</color>
+    <color name="material_drawer_primary_dark">@color/colorPrimaryDark</color>
+    <color name="material_drawer_primary_light">@color/colorPrimary</color>
+    <color name="material_drawer_accent">@color/colorPrimary</color>
+
+    <!-- OVERWRITE THESE COLORS FOR A LIGHT THEME -->
+    <!-- MaterialDrawer DEFAULT colors -->
+    <color name="material_drawer_background">#F9F9F9</color>
+    <!-- Material DEFAULT text / items colors -->
+    <color name="material_drawer_primary_text">#DE000000</color>
+    <color name="material_drawer_primary_icon">#8A000000</color>
+    <color name="material_drawer_secondary_text">#8A000000</color>
+    <color name="material_drawer_hint_text">#42000000</color>
+    <color name="material_drawer_divider">#1F000000</color>
+    <!-- Material DEFAULT drawer colors -->
+    <color name="material_drawer_selected">@color/colorPrimary</color>
+    <color name="material_drawer_selected_legacy">@color/colorPrimary</color>
+    <color name="material_drawer_selected_text">#FFFFFF</color>
+    <color name="material_drawer_header_selection_text">#DE000000</color>
+    <color name="material_drawer_header_selection_subtext">#8A000000</color>
+
+    <!--OnBoard-->
+    <color name="selected_dot">@color/colorPrimary</color>
+    <color name="idle_dot">@color/colorPrimaryLight</color>
+    <color name="category_icon_color">#9d9d9d</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="textColor">#212121</color>
+</resources>

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">MedicAlgo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_categories">Categories</string>
+    <string name="menu_favourites">Favourites</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_assessment">Assessment</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_algorithms">Algorithms</string>
+    <string name="menu_about">About</string>
+    <string name="title_activity_algorithm">AlgorithmActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="others">Others</string>
+    <string name="title_activity_image_view_actvity">ImageViewActvity</string>
+
+    <string name="api_key_message">Enter API key for Google Cloud Speech to Text</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="speech_header">Speech</string>
+    <string name="google_speech_header">Google Cloud Speech to Text</string>
+    <string name="tts_header">Text to Speech</string>
+
+    <!-- Messages Preferences -->
+    <string name="language_title">Language</string>
+    <string name="engine_title">Voice Recognition Engine</string>
+
+    <!-- Sync Preferences -->
+    <string name="api_key_title">API key</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="search_hint">Search for an algorithm</string>
+    <string name="menu_algorithm">Algorithm</string>
+    <string name="access_key_title">Access key</string>
+    <string name="secret_access_key_title">Secret Access Key</string>
+    <string name="session_id_title">Session ID</string>
+    <string name="amazon_transcribe_title">Amazon Transcribe</string>
+    <string name="get_started">Get Started</string>
+    <string name="record_perm_denied">Voice recognition will not work without the Microphone permission.</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_favourites">Favourites</string>
+    <string name="title_assessment">Assessment</string>
+    <string name="title_search">Search</string>
+    <string name="assessment_started">Assessment started</string>
+    <string name="assessment_stop">Assessment stopped</string>
+    <string name="invalid_keys">Invalid API keys specified</string>
+    <string name="hotword_activated">Say OK Trachy to speak</string>
+    <string name="hotword">trachy</string>
+    <string name="return_to_previous_page">Returning to previous page</string>
+    <string name="step_start_over">Starting over at step one</string>
+    <string name="search_algorithms_contain">\"Here are the algorithms containing \"</string>
+    <string name="launch_categories">Launching categories</string>
+    <string name="launching">\"Launching \"</string>
+    <string name="algorithms">\" algorithms\"</string>
+    <string name="algorithm">\" algorithm\"</string>
+    <string name="launch_full_algo">Launching the full algorithm image</string>
+    <string name="launch_fav">Launching your favourite\'s list</string>
+    <string name="launch_assessment">Launching the assessment center</string>
+    <string name="error">Error</string>
+    <string name="network_error">Network error</string>
+
+</resources>

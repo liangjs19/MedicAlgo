@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:dither="true"
+    android:shape="oval"
+    android:useLevel="true">
+    <size
+        android:width="@dimen/pager_dot_size"
+        android:height="@dimen/pager_dot_size" />
+    // Change the color based on the indicator states
+    <solid android:color="@color/selected_dot" />
+</shape>

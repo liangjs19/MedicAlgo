@@ -1,0 +1,48 @@
+{
+  "category_id": 0,
+  "algorithm_id": 0,
+  "algorithm": "Tracheostomy",
+  "image": "https://i.ibb.co/j4HNtPs/OFM-PNX-Tracheostomy-A4-v2-1.jpg",
+  "sections": [
+    {
+      "section_id": 0,
+      "title": "Primary emergency oxygenation",
+      "color": -16776961
+    }
+  ],
+  "steps": [
+    {
+      "step_id": 0,
+      "title": "Call for airway expert help",
+      "step": "Look, listen & feel at the mouth and tracheostomy stoma<br />Use <b>waveform capnography</b> if available",
+      "ssml": "<speak> Call for airway expert help<break time=\"400ms\"/>Look, listen and feel at the mouth and tracheostomy</speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 1,
+          "intent": "negate_patient_symptom",
+          "entities": [
+            "pulse"
+          ]
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "observe",
+        "stoma"
+      ]
+    },
+    {
+      "step_id": 17,
+      "section_id": 0,
+      "step": "Standard <b>ORAL airway</b> manoeuvres<br />Cover the stoma (swabs / hands)",
+      "ssml": "<speak>Standard<emphasis level=\"strong\">ORAL airway</emphasis><break time=\"500ms\"/>Cover the stoma (swabs / hands)</speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 18
+        }
+      ]
+    }
+  ]
+}

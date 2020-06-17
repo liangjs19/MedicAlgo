@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mbaxajl3.medicalgo.ui.categories.CategoriesFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favourites"
+        android:name="com.mbaxajl3.medicalgo.ui.favourites.FavouritesFragment"
+        android:label="@string/menu_favourites"
+        tools:layout="@layout/fragment_favourites" />
+
+    <fragment
+        android:id="@+id/nav_assessment"
+        android:name="com.mbaxajl3.medicalgo.ui.assessment.AssessmentFragment"
+        android:label="@string/menu_assessment"
+        tools:layout="@layout/fragment_assessment" />
+
+    <fragment
+        android:id="@+id/settings"
+        android:label="@string/menu_settings" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.mbaxajl3.medicalgo.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

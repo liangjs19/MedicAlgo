@@ -1,0 +1,76 @@
+<!--
+  ~ Copyright 2018 The app Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="User interface">
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="transcript"
+            app:title="Display Voice Transcript">
+
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/tts_header">
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="tts"
+            app:summary="Enable reading aloud algorithm steps and response after voice recognition"
+            app:title="Enable Text to Speech">
+
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/speech_header">
+        <!--        <ListPreference-->
+        <!--            app:defaultValue="en-GB"-->
+        <!--            app:entries="@array/language_entries"-->
+        <!--            app:entryValues="@array/language_values"-->
+        <!--            app:key="speech_language"-->
+        <!--            app:title="@string/language_title"-->
+        <!--            app:useSimpleSummaryProvider="true" />-->
+
+        <ListPreference
+            app:defaultValue="google_cloud"
+            app:entries="@array/engine_entries"
+            app:entryValues="@array/engine_values"
+            app:key="speech_engine"
+            app:title="@string/engine_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <CheckBoxPreference
+            app:defaultValue="false"
+            app:key="hotword"
+            app:summary="Hotword will be required every 10 seconds"
+            app:title="Hotword (OK Trachy)">
+
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/google_speech_header">
+        <EditTextPreference
+            app:key="api_key"
+            app:title="@string/api_key_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/amazon_transcribe_title">
+        <EditTextPreference
+            app:key="access_key_id"
+            app:title="@string/access_key_title" />
+        <EditTextPreference
+            app:key="secret_access_key"
+            app:title="@string/secret_access_key_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

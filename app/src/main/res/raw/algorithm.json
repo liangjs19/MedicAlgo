@@ -1,0 +1,393 @@
+{
+  "category_id": 0,
+  "algorithm_id": 0,
+  "algorithm": "Laryngectomy",
+  "image": "https://i.ibb.co/Kx22RvF/OFM-PNX-Laryngectomy-A4-v2-1.jpg",
+  "sections": [
+    {
+      "section_id": 0,
+      "title": "Primary emergency oxygenation",
+      "color": -16776961
+    },
+    {
+      "section_id": 1,
+      "title": "Secondary emergency oxygenation",
+      "color": -65536
+    }
+  ],
+  "words": [
+    "next",
+    "yes",
+    "no",
+    "waveform capnography",
+    "capnography",
+    "laryngectomy",
+    "stoma",
+    "assess",
+    "assessment",
+    "patent",
+    "tracheal",
+    "suction catheter",
+    "stable",
+    "improving",
+    "breathing",
+    "patient",
+    "paediatric face mask",
+    "LMA",
+    "CPR",
+    "stoma cover",
+    "deflate",
+    "cuff",
+    "resuscitation"
+  ],
+  "steps": [
+    {
+      "step_id": 0,
+      "title": "Call for airway expert help<br />Look, listen & feel at the mouth and laryngectomy stoma",
+      "step": "A Mapleson C system (e.g. 'Waters circuit') may help assessment if available<br />Use <b>waveform capnography</b> whenever available: exhaled carbon dioxide indicates a patent or partially patent airway",
+      "ssml": "<speak> Call for airway expert help<break time=\"400ms\"/>Look, listen and feel at the mouth and laryngectomy stoma</speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 1
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "observe",
+        "stoma"
+      ]
+    },
+    {
+      "step_id": 1,
+      "step": "Is the patient breathing?",
+      "ssml": "<speak> Is the patient breathing? <break time=\"500ms\"/> Yes or No </speak>",
+      "options": [
+        {
+          "option": "No",
+          "next_step_id": 2,
+          "color": "#c4342d",
+          "intent": "negate_patient_symptom",
+          "entities": [
+            "pulse"
+          ]
+        },
+        {
+          "option": "Yes",
+          "next_step_id": 3,
+          "color": "#106b21",
+          "intent": "patient_symptom",
+          "entities": [
+            "pulse"
+          ]
+        }
+      ],
+      "intent": "question",
+      "entities": [
+        "pulse"
+      ]
+    },
+    {
+      "step_id": 2,
+      "step": "Call Resuscitation Team, <b>CPR if no pulse or signs of life</b>",
+      "ssml": "<speak> Call Resuscitation Team, <break time=\"300ms\"/> <emphasis level=\"strong\"> CPR if no pulse or signs of life </emphasis> </speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 4
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "perform",
+        "cpr"
+      ]
+    },
+    {
+      "step_id": 3,
+      "title": "Apply high flow oxygen to laryngectomy stoma",
+      "step": "If any doubt whether patient has a laryngectomy, apply oxygen to face also",
+      "ssml": "<speak> <emphasis level=\"strong\"> Apply high flow oxygen to laryngectomy stoma </emphasis></speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 4
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "perform",
+        "high flow oxygen",
+        "stoma"
+      ]
+    },
+    {
+      "step_id": 4,
+      "title": "Assess laryngectomy stoma patency",
+      "step": "Most laryngectomy stomas will NOT have a tube in situ",
+      "ssml": "<speak> Assess laryngectomy stoma patency. Most laryngectomy stomas will <emphasis level=\"strong\"> NOT </emphasis> have a tube in situ </speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 5
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "assess",
+        "stoma"
+      ]
+    },
+    {
+      "step_id": 5,
+      "title": "Remove stoma cover (if present)<br />Remove inner tube (if present)",
+      "step": "Some inner tubes need re-inserting to connect to breathing circuits<br />Do not remove a tracheoseophageal puncture(TEP) prosthesis",
+      "ssml": "<speak> Remove stoma cover (if present)<break time=\"500ms\"/>Remove inner tube (if present)</speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 6
+        }
+      ],
+      "optional": "true",
+      "intent": "medical_action",
+      "entities": [
+        "stoma cover",
+        "remove",
+        "tube"
+      ]
+    },
+    {
+      "step_id": 6,
+      "step": "<b>Can you pass a suction catheter?</b>",
+      "ssml": "<speak> Can you pass a suction catheter?<break time=\"500ms\"/>Yes or No </speak>",
+      "options": [
+        {
+          "option": "No",
+          "next_step_id": 7,
+          "color": "#c4342d",
+          "intent": "negate_medical_action",
+          "entities": [
+            "insert",
+            "suction catheter"
+          ]
+        },
+        {
+          "option": "Yes",
+          "next_step_id": 9,
+          "color": "#106b21",
+          "intent": "medical_action",
+          "entities": [
+            "insert",
+            "suction catheter"
+          ]
+        }
+      ],
+      "intent": "question",
+      "entities": [
+        "insert",
+        "suction catheter"
+      ]
+    },
+    {
+      "step_id": 7,
+      "step": "Deflate the cuff (if present)",
+      "ssml": "<speak> Deflate the cuff (if present)</speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 8
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "deflate",
+        "cuff"
+      ]
+    },
+    {
+      "step_id": 8,
+      "title": "<b>Look, listen & feel at the laryngectomy stoma or tube</b>",
+      "step": "Use waveform capnography or Mapleson C if available",
+      "ssml": "<speak><emphasis level=\"strong\">Look, listen and feel at the laryngectomy stoma or tube</emphasis></speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 10
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "observe",
+        "stoma"
+      ]
+    },
+    {
+      "step_id": 9,
+      "title": "The laryngectomy stoma is patent",
+      "step": "Perform tracheal suction<br />Consider partial obstruction<br /> Ventilate via stoma if not breathing<br />Continue ABCDE assessment",
+      "ssml": "<speak>The laryngectomy stoma is patent</speak>",
+      "intent": "medical_action",
+      "entities": [
+        "patent",
+        "stoma",
+        "laryngectomy"
+      ]
+    },
+    {
+      "step_id": 10,
+      "step": "<b>Is the patient stable or improving?</b>",
+      "ssml": "<speak>Is the patient stable or improving?<break time=\"500ms\"/>Yes or No </speak>",
+      "options": [
+        {
+          "option": "No",
+          "next_step_id": 11,
+          "color": "#c4342d",
+          "intent": "negate_patient_symptom",
+          "entities": [
+            "stable"
+          ]
+        },
+        {
+          "option": "Yes",
+          "next_step_id": 13,
+          "color": "#106b21",
+          "intent": "patient_symptom",
+          "entities": [
+            "stable"
+          ]
+        }
+      ],
+      "intent": "question",
+      "entities": [
+        "stable"
+      ]
+    },
+    {
+      "step_id": 11,
+      "step": "Remove the tube from the laryngectomy stoma if present",
+      "ssml": "<speak>Remove the tube from the laryngectomy stoma if present</speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 12
+        }
+      ],
+      "optional": "true",
+      "intent": "medical_action",
+      "entities": [
+        "stoma",
+        "remove"
+      ]
+    },
+    {
+      "step_id": 12,
+      "title": "<b>Look, listen & feel at the laryngectomy stoma</b>",
+      "step": "Ensure oxygen is re-applied to stoma<br />Use waveform capnography or Mapleson C if available",
+      "ssml": "<speak><emphasis level=\"strong\">Look, listen and feel at the laryngectomy stoma</emphasis><break time=\"500ms\"/></speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 14
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "observe",
+        "stoma"
+      ]
+    },
+    {
+      "step_id": 13,
+      "step": "Continue ABCDE assessment",
+      "ssml": "<speak>Continue ABCDE assessment</speak>",
+      "intent": "medical_action",
+      "entities": [
+        "assess"
+      ]
+    },
+    {
+      "step_id": 14,
+      "step": "Is the patient breathing?",
+      "ssml": "<speak> Is the patient breathing? <break time=\"500ms\"/> Yes or No </speak>",
+      "options": [
+        {
+          "option": "No",
+          "next_step_id": 15,
+          "color": "#c4342d",
+          "intent": "negate_patient_symptom",
+          "entities": [
+            "pulse"
+          ]
+        },
+        {
+          "option": "Yes",
+          "next_step_id": 16,
+          "color": "#106b21",
+          "intent": "patient_symptom",
+          "entities": [
+            "pulse"
+          ]
+        }
+      ],
+      "intent": "question",
+      "entities": [
+        "pulse"
+      ]
+    },
+    {
+      "step_id": 15,
+      "step": "Call Resuscitation Team<br /><b>CPR if no pulse/signs of life</b>",
+      "ssml": "<speak> Call Resuscitation Team, <break time=\"300ms\"/> <emphasis level=\"strong\"> CPR if no pulse or signs of life </emphasis> </speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 17
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "perform",
+        "cpr"
+      ]
+    },
+    {
+      "step_id": 16,
+      "step": "Continue ABCDE assessment",
+      "ssml": "<speak>Continue ABCDE assessment</speak>",
+      "intent": "medical_action",
+      "entities": [
+        "assess"
+      ]
+    },
+    {
+      "step_id": 17,
+      "section_id": 0,
+      "step": "<b>Laryngectomy stoma</b> ventilation via either Paediatric face-mask or LMA applied to stoma",
+      "ssml": "<speak> <emphasis level=\"strong\"> Laryngectomy stoma </emphasis><break time=\"300ms\"/>ventilation via either Paediatric face-mask or LMA applied to stoma</speak>",
+      "options": [
+        {
+          "option": "Next",
+          "next_step_id": 18
+        }
+      ],
+      "intent": "medical_action",
+      "entities": [
+        "lma",
+        "stoma",
+        "apply"
+      ]
+    },
+    {
+      "step_id": 18,
+      "section_id": 1,
+      "step": "Attempt <b>intubation of laryngectomy stoma</b><br />Small tracheostomy tube or 6.0 cuffed ETT<br />Consider: Aintree catheter and fibreoptic scope / Bougie / Airway Exchange Catheter",
+      "ssml": "<speak>Attempt <emphasis level=\"strong\"> intubation of laryngectomy stoma </emphasis></speak>",
+      "intent": "medical_action",
+      "entities": [
+        "insert",
+        "stoma"
+      ]
+    }
+  ]
+}
