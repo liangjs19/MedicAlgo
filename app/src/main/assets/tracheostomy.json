@@ -124,7 +124,7 @@
       "optional": "true",
       "intent": "medical_action",
       "entities": [
-        "stoma cover",
+        "speaking valve",
         "remove",
         "tube"
       ]

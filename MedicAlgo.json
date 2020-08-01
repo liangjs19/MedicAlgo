@@ -1,0 +1,485 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "medical_action",
+      "features": []
+    },
+    {
+      "name": "navigate",
+      "features": []
+    },
+    {
+      "name": "negate_medical_action",
+      "features": []
+    },
+    {
+      "name": "negate_patient_symptom",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "patient_symptom",
+      "features": []
+    },
+    {
+      "name": "question",
+      "features": []
+    },
+    {
+      "name": "return",
+      "features": []
+    },
+    {
+      "name": "search",
+      "features": []
+    },
+    {
+      "name": "step_action",
+      "features": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "search_item",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "treatment",
+      "children": [],
+      "roles": [],
+      "features": [
+        {
+          "featureName": "treatment",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "action",
+      "subLists": [
+        {
+          "canonicalForm": "apply",
+          "list": [
+            "applying"
+          ]
+        },
+        {
+          "canonicalForm": "perform",
+          "list": []
+        },
+        {
+          "canonicalForm": "remove",
+          "list": []
+        },
+        {
+          "canonicalForm": "insert",
+          "list": []
+        },
+        {
+          "canonicalForm": "deflate",
+          "list": []
+        },
+        {
+          "canonicalForm": "observe",
+          "list": []
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "body_part",
+      "subLists": [
+        {
+          "canonicalForm": "stoma",
+          "list": [
+            "laryngectomy stoma"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "device",
+      "subLists": [
+        {
+          "canonicalForm": "speaking valve",
+          "list": [
+            "speaking cap"
+          ]
+        },
+        {
+          "canonicalForm": "stoma cover",
+          "list": []
+        },
+        {
+          "canonicalForm": "suction catheter",
+          "list": []
+        },
+        {
+          "canonicalForm": "tube",
+          "list": []
+        },
+        {
+          "canonicalForm": "cuff",
+          "list": []
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "fragments",
+      "subLists": [
+        {
+          "canonicalForm": "home",
+          "list": [
+            "categories"
+          ]
+        },
+        {
+          "canonicalForm": "airway management",
+          "list": []
+        },
+        {
+          "canonicalForm": "tracheostomy",
+          "list": []
+        },
+        {
+          "canonicalForm": "laryngectomy",
+          "list": []
+        },
+        {
+          "canonicalForm": "search",
+          "list": []
+        },
+        {
+          "canonicalForm": "favorites",
+          "list": [
+            "favourites"
+          ]
+        },
+        {
+          "canonicalForm": "assessments",
+          "list": []
+        },
+        {
+          "canonicalForm": "image",
+          "list": []
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "symptom",
+      "subLists": [
+        {
+          "canonicalForm": "stable",
+          "list": [
+            "improving"
+          ]
+        },
+        {
+          "canonicalForm": "pulse",
+          "list": [
+            "breathing"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "apply high flow oxygen to laryngectomy stoma",
+      "intent": "medical_action",
+      "entities": [
+        {
+          "entity": "treatment",
+          "startPos": 6,
+          "endPos": 21,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "applying lma",
+      "intent": "medical_action",
+      "entities": [
+        {
+          "entity": "treatment",
+          "startPos": 9,
+          "endPos": 11,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "assess laryngectomy stoma patency",
+      "intent": "medical_action",
+      "entities": []
+    },
+    {
+      "text": "assess tracheostomy patency",
+      "intent": "medical_action",
+      "entities": []
+    },
+    {
+      "text": "can you pass a suction catheter?",
+      "intent": "question",
+      "entities": []
+    },
+    {
+      "text": "continue abcde assessment",
+      "intent": "medical_action",
+      "entities": []
+    },
+    {
+      "text": "deflate the cuff",
+      "intent": "medical_action",
+      "entities": []
+    },
+    {
+      "text": "go back",
+      "intent": "return",
+      "entities": []
+    },
+    {
+      "text": "go to home",
+      "intent": "navigate",
+      "entities": []
+    },
+    {
+      "text": "i can pass a suction catheter",
+      "intent": "medical_action",
+      "entities": []
+    },
+    {
+      "text": "i cannot pass a suction catheter",
+      "intent": "negate_medical_action",
+      "entities": []
+    },
+    {
+      "text": "is the patient breathing?",
+      "intent": "question",
+      "entities": []
+    },
+    {
+      "text": "is the patient stable or improving?",
+      "intent": "question",
+      "entities": []
+    },
+    {
+      "text": "look, listen & feel at the laryngectomy stoma or tube",
+      "intent": "medical_action",
+      "entities": []
+    },
+    {
+      "text": "open airway management",
+      "intent": "navigate",
+      "entities": []
+    },
+    {
+      "text": "open image",
+      "intent": "navigate",
+      "entities": []
+    },
+    {
+      "text": "open laryngectomy algorithm",
+      "intent": "navigate",
+      "entities": [
+        {
+          "entity": "treatment",
+          "startPos": 5,
+          "endPos": 16,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "open my assessments",
+      "intent": "navigate",
+      "entities": []
+    },
+    {
+      "text": "open my favourites list",
+      "intent": "navigate",
+      "entities": []
+    },
+    {
+      "text": "open search",
+      "intent": "navigate",
+      "entities": []
+    },
+    {
+      "text": "open tracheostomy algorithm",
+      "intent": "navigate",
+      "entities": [
+        {
+          "entity": "treatment",
+          "startPos": 5,
+          "endPos": 16,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "patient has no pulse",
+      "intent": "negate_patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "patient has pulse",
+      "intent": "patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "patient is breathing",
+      "intent": "patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "patient is breathing and there is a pulse",
+      "intent": "patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "patient is not breathing",
+      "intent": "negate_patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "patient is still breathing",
+      "intent": "patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "performing cpr",
+      "intent": "medical_action",
+      "entities": [
+        {
+          "entity": "treatment",
+          "startPos": 11,
+          "endPos": 13,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "remove inner tube",
+      "intent": "medical_action",
+      "entities": []
+    },
+    {
+      "text": "remove stoma cover",
+      "intent": "medical_action",
+      "entities": []
+    },
+    {
+      "text": "removing tracheostomy tube",
+      "intent": "medical_action",
+      "entities": []
+    },
+    {
+      "text": "repeat",
+      "intent": "step_action",
+      "entities": []
+    },
+    {
+      "text": "restart",
+      "intent": "step_action",
+      "entities": []
+    },
+    {
+      "text": "return",
+      "intent": "return",
+      "entities": []
+    },
+    {
+      "text": "search for algorithms starting with la",
+      "intent": "search",
+      "entities": [
+        {
+          "entity": "search_item",
+          "startPos": 36,
+          "endPos": 37,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "the patient is improving",
+      "intent": "patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "the patient is not improving",
+      "intent": "negate_patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "the patient is stable",
+      "intent": "patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "this patient is not stable",
+      "intent": "negate_patient_symptom",
+      "entities": []
+    },
+    {
+      "text": "view all categories",
+      "intent": "navigate",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "MedicAlgo",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [
+    {
+      "name": "treatment",
+      "mode": true,
+      "words": "tracheostomy,laryngectomy",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "symptom",
+      "mode": true,
+      "words": "breathing,pulse",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "device",
+      "mode": true,
+      "words": "suction catheter,cuff,inner tube,stoma cover,stoma,laryngectomy stoma,paediatric face-mask,bronchoscope,aintree catheter bougie,airway exchange catheter,tracheosophageal puncture prosthesis",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "device action",
+      "mode": true,
+      "words": "pass,deflate,suction,going in,intubate",
+      "activated": true,
+      "enabledForAllModels": false
+    }
+  ],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}
