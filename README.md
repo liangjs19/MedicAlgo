@@ -8,6 +8,8 @@
 <a href="https://ibb.co/BfTx8sj"><img src="https://i.ibb.co/3TSqthW/algorithm-transcript.png" alt="algorithm-transcript" border="0" width="256"></a>
 </p>
 
+[DEMO](https://youtu.be/TRLvYmQjjMo)
+
 ### Voice Recognition Setup
 
 Enabling voice recognition requires two parts, [Google Cloud Speech to Text](https://cloud.google.com/speech-to-text) or [Amazon Transcribe](https://aws.amazon.com/transcribe/) for voice recognition and [LUIS.ai](https://www.luis.ai/) for Natural Language Processing.
