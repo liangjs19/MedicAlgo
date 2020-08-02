@@ -25,13 +25,13 @@ import java.util.Set;
 
 public class NLUController {
     public final static String TAG = "NLUController";
-    public final static String appId = "";
-    public final static String key = "";
-    public final static String endpoint = "";
+    public final static String appId = "e66f327a-e965-4d73-ba96-d637cd89e4e3";
+    public final static String key = "395e955eee534992848dbc9a53bbd268";
+    public final static String endpoint = "medicalgo.cognitiveservices.azure.com/";
 
     public static void get(String utterance, final Callback callback) {
         // Begin endpoint URL string building
-        String uri = "https://" + endpoint + "/luis/prediction/v3.0/apps/" + appId + "/slots/staging/predict";
+        String uri = "https://" + endpoint + "/luis/prediction/v3.0/apps/" + appId + "/slots/production/predict";
         Uri builtUri = Uri.parse(uri).buildUpon()
                 .appendQueryParameter("subscription-key", key)
                 .appendQueryParameter("verbose", "true")

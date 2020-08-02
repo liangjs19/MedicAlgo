@@ -317,6 +317,10 @@ public class MainActivity extends AppCompatActivity implements
         speechService.setResponseStatusListener(success -> new Handler(Looper.getMainLooper()).post(new Runnable() {
             public void run() {
                 //TODO check cast
+                if ((boolean) success[0]) {
+                    return;
+                }
+
                 if (((Pair<String, Boolean>) success[0]).second) {
 
                 } else {

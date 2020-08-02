@@ -75,15 +75,21 @@
         },
         {
           "canonicalForm": "perform",
-          "list": []
+          "list": [
+            "performing"
+          ]
         },
         {
           "canonicalForm": "remove",
-          "list": []
+          "list": [
+            "removing"
+          ]
         },
         {
           "canonicalForm": "insert",
-          "list": []
+          "list": [
+            "pass"
+          ]
         },
         {
           "canonicalForm": "deflate",
@@ -91,7 +97,9 @@
         },
         {
           "canonicalForm": "observe",
-          "list": []
+          "list": [
+            "look"
+          ]
         }
       ],
       "roles": []
@@ -269,6 +277,16 @@
       "entities": []
     },
     {
+      "text": "i can't pass a suction catheter",
+      "intent": "negate_medical_action",
+      "entities": []
+    },
+    {
+      "text": "i can't pass a suction catheter.",
+      "intent": "negate_medical_action",
+      "entities": []
+    },
+    {
       "text": "is the patient breathing?",
       "intent": "question",
       "entities": []
@@ -319,6 +337,18 @@
       "text": "open search",
       "intent": "navigate",
       "entities": []
+    },
+    {
+      "text": "open tracheostomy",
+      "intent": "navigate",
+      "entities": [
+        {
+          "entity": "treatment",
+          "startPos": 5,
+          "endPos": 16,
+          "children": []
+        }
+      ]
     },
     {
       "text": "open tracheostomy algorithm",
