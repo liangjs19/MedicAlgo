@@ -1,5 +1,11 @@
 # Voice Activated App for Medical Algorithms
 
+Medical algorithms, such as decision tree approaches to healthcare management, are useful
+tools for standardizing responses to events or emergencies, and help to reduce uncertainty. In
+emergency situations, reading a bedhead algorithm can interfere with the management of the
+patient. Mobile apps exist for following a decision tree, but still require physical interaction.
+This project aims to integrate voice controls into a new general app for medical algorithms.
+
 
 
 <p float="left">
@@ -16,11 +22,11 @@ Enabling voice recognition requires two parts, [Google Cloud Speech to Text](htt
 
 ##### Google Cloud Speech to Text
 
-Requires API key obtained from Google Cloud, to be entered in the app itself.
+Requires API key obtained from [Google Cloud Speech to Text](https://cloud.google.com/speech-to-text), to be entered in the app itself.
 
 ##### Amazon Transcribe 
 
-Requires access key and API key from AWS, to be entered in the app itself. Recommended to include a [custom vocabulary](https://aws.amazon.com/blogs/machine-learning/build-a-custom-vocabulary-to-enhance-speech-to-text-transcription-accuracy-with-amazon-transcribe/) to enhance recognition of specific keywords such as laryngectomy.
+Requires access key and API key from [AWS](https://aws.amazon.com/transcribe/), to be entered in the app itself. Needs to include a [custom vocabulary](https://aws.amazon.com/blogs/machine-learning/build-a-custom-vocabulary-to-enhance-speech-to-text-transcription-accuracy-with-amazon-transcribe/) named "medical" to enhance recognition of specific keywords such as laryngectomy. Example available (amazontranscribe-customvocab.txt) in the root of this repository.
 
 ##### LUIS.ai
 
