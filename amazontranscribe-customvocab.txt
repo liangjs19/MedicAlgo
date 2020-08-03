@@ -1,0 +1,4 @@
+Phrase	SoundsLike	IPA	DisplayAs
+Laryngectomy	lar-uhn-jEk-tuh-mee		Laryngectomy
+Suction				
+Catheter			
